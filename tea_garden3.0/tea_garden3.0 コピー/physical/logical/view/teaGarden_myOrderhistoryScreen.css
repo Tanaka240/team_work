@@ -1,0 +1,181 @@
+/* 画面全体のデザイン */
+body{
+  margin: 0 ;
+  font-family: 'Noto Serif JP', serif ;
+  background-color: #fdfaf6 ;
+  color: #333 ;
+}
+
+
+/* ヘッダー 全体のデザイン */
+.header{
+  display: flex ;
+  justify-content: space-between ;
+  align-items: center ;
+  padding: 20px ;
+  background: #f7f7f7 ;
+  border-bottom: 1px solid #ddd ;
+}
+
+/* ヘッダー ロゴのデザイン */
+.logo{
+  font-size: 24px ;
+  font-weight: bold ;
+}
+
+.logo span{
+  font-size: 14px ;
+  margin-left: 8px ;
+  color: #777 ;
+}
+
+/* ヘッダー ナビゲーション部分のデザイン */
+.nav form{
+  display: inline-block ;
+  margin-right: 10px ;
+}
+
+.nav form:last-child{
+  margin-right: 0 ;
+}
+
+.nav button{
+  font-size: 14px ;
+  border: none ;
+  background: none ;
+  padding: 0 ;
+  color: #333 ;
+  cursor: pointer ;
+}
+
+.nav button:hover{
+  text-decoration: underline ;
+}
+
+
+/* コンテナ 全体のデザイン */
+.container{
+  display: flex ;
+  max-width: 1200px ;
+  margin: 30px auto ;
+  padding: 0 20px ;
+}
+
+.container.no-sidebar{
+  display: block ;
+}
+
+/* メインコンテナ 全体のデザイン */
+.main-content{
+  flex: 1 ;
+  padding-left: 30px ;
+}
+
+.main-content.full-width{
+  flex: none ;
+  width: 100% ;
+  padding-left: 0 ;
+  padding-right: 0 ;
+}
+
+.container.no-sidebar .main-content.full-width{
+  padding-left: 20px ;
+  padding-right: 20px ;
+}
+
+/* メインコンテナ 見出しのデザイン */
+.main-content h1{
+  font-size: 28px ;
+  margin-bottom: 20px ;
+  border-bottom: 2px solid #ddd ;
+  display: inline-block ;
+}
+
+/* メインコンテナ テーブル 全体のデザイン */
+.history-table-container{
+  margin-top: 30px ;
+  background-color: #fff ;
+  border: 1px solid #ddd ;
+  border-radius: 8px ;
+  overflow-x: auto ;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* メインコンテナ テーブル 本体のデザイン */
+.history-table-container table{
+  width: 100% ;
+  border-collapse: collapse ;
+}
+
+/* メインコンテナ テーブル ヘッダー行のデザイン */
+.history-table-container th{
+  background-color: #f7f7f7 ;
+  color: #333 ;
+  font-weight: 700 ;
+  padding: 12px 15px ;
+  text-align: left ;
+  border-bottom: 2px solid #ddd ;
+}
+
+/* メインコンテナ テーブル データ行のデザイン */
+.history-table-container td{
+  padding: 12px 15px ;
+  border-bottom: 1px solid #eee ;
+  font-size: 14px ;
+  line-height: 1.4 ;
+  vertical-align: top ;
+}
+
+/* メインコンテナ テーブル 偶数行の背景色のデザイン */
+.history-table-container tbody tr:nth-child(even){
+  background-color: #fafafa ;
+}
+
+/* メインコンテナ テーブル 最後の行のデザイン */
+.history-table-container tbody tr:last-child td{
+  border-bottom: none ;
+}
+
+/* メインコンテナ テーブル 配達状況ステータスのデザイン */
+.status-processing{
+  font-weight: bold ;
+  color: #ff9800 ;
+}
+
+.status-shipped{
+  font-weight: bold ;
+  color: #007bff ;
+}
+
+.status-delivered{
+  font-weight: bold ;
+  color: #4caf50 ;
+}
+
+/* メインコンテナ テーブル アクション行のデザイン */
+.history-table-container th.action-column,.history-table-container td.action-column{
+  width: 100px ;
+  text-align: center ;
+}
+
+/* メインコンテナ テーブル キャンセルボタンのデザイン */
+.cancel-btn{
+  background-color: #e74c3c ;
+  color: white ;
+  border: none ;
+  padding: 8px 12px ;
+  border-radius: 4px ;
+  font-size: 14px ;
+  cursor: pointer ;
+  transition: background-color 0.2s ;
+  font-family: inherit ;
+}
+
+.cancel-btn:hover{
+  background-color: #c0392b ;
+}
+
+.history-table-container td.action-column form{
+  margin: 0 ;
+  display: inline-block ;
+}

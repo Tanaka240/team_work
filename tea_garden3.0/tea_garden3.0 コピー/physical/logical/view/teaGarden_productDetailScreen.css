@@ -1,0 +1,258 @@
+/* 画面全体のデザイン */
+body{
+  margin: 0 ;
+  font-family: 'Noto Serif JP', serif ;
+  background-color: #fdfaf6 ;
+  color: #333 ;
+}
+
+
+/* ヘッダー 全体のデザイン */
+.header{
+  display: flex ;
+  justify-content: space-between ;
+  align-items: center ;
+  padding: 20px ;
+  background: #f7f7f7 ;
+  border-bottom: 1px solid #ddd ;
+}
+
+/* ヘッダー ロゴのデザイン */
+.logo{
+  font-size: 24px ;
+  font-weight: bold ;
+}
+
+.logo span{
+  font-size: 14px ;
+  margin-left: 8px ;
+  color: #777 ;
+}
+
+/* ヘッダー ナビゲーション部分のデザイン */
+.nav form{
+  display: inline-block ;
+  margin-right: 10px ;
+}
+
+.nav form:last-child{
+  margin-right: 0 ;
+}
+
+.nav button{
+  font-size: 14px ;
+  border: none ;
+  background: none ;
+  padding: 0 ;
+  color: #333 ;
+  cursor: pointer ;
+}
+
+.nav button:hover{
+  text-decoration: underline ;
+}
+
+
+/* コンテナ 全体のデザイン */
+.container{
+  display: flex ;
+  max-width: 1200px ;
+  margin: 30px auto ;
+  padding: 0 20px ;
+}
+
+
+/* サイドコンテナ 全体のデザイン */
+.sidebar{
+  width: 250px ;
+  padding-right: 20px ;
+  border-right: 1px solid #eee ;
+}
+
+/* サイドコンテナ 検索エンジンのデザイン */
+.search-form{
+  display: flex ;
+  border: 1px solid #ccc ;
+  border-radius: 25px ;
+  overflow: hidden ;
+  background-color: #fff ;
+}
+
+.search-input{
+  flex-grow: 1 ;
+  padding: 10px 15px ;
+  border: none ;
+  outline: none ;
+  font-size: 16px ;
+}
+
+/* サイドコンテナ 見出しのデザイン */
+.sidebar h3{
+  font-size: 16px ;
+  margin-top: 20px ;
+  border-bottom: 1px solid #ccc ;
+  padding-bottom: 5px ;
+}
+
+/* サイドコンテナ リスト化したおすすめ商品とお茶の種類のデザイン */
+.sidebar ul{
+  list-style: none ;
+  padding-left: 10px ;
+}
+
+.sidebar ul li{
+  margin: 10px 0 ;
+}
+
+.tg_sidebtn{
+  background: none ;
+  border: none ;
+  font: inherit ;
+  padding: 0 ;
+}
+
+.tg_sidebtn:hover{
+  text-decoration: underline ;
+}
+
+
+/* メインコンテナ 全体のデザイン */
+.main-content{
+  flex: 1 ;
+  padding-left: 30px ;
+  background-color: #fff8f0 ;
+  padding-bottom: 50px ;
+}
+
+/* メインコンテナ 見出しのデザイン */
+.main-content h1{
+  font-size: 28px ;
+  margin-bottom: 20px ;
+  border-bottom: 2px solid #ddd ;
+  display: inline-block ;
+}
+
+/* メインコンテナ 商品詳細のデザイン */
+.product-detail-wrapper{
+  display: flex ;
+  gap: 40px ;
+  padding: 20px ;
+  background-color: #fff ;
+  border-radius: 8px ;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* メインコンテナ 商品画像のデザイン */
+.product-image{
+  flex-shrink: 0 ;
+  width: 400 ;
+}
+
+.product-image img{
+  width: 100% ;
+  height: auto ;
+  border-radius: 5px ;
+  border: 1px solid #ddd ;
+}
+
+/* メインコンテナ 商品情報のデザイン */
+.product-info{
+  flex-grow: 1 ;
+}
+
+.product-title{
+  font-size: 24px ;
+  color: #333;
+  margin-top: 0 ;
+  margin-bottom: 10px ;
+}
+
+.product-name{
+  font-size: 16px ;
+  color: #555;
+  margin-bottom: 20px ;
+  font-weight: bold ;
+  padding-bottom: 5px ;
+  border-bottom: 1px dashed #eee ;
+}
+
+.product-origin{
+  font-size: 14px ;
+  margin-bottom: 15px ;
+  color: #777 ;
+}
+
+.product-price{
+  font-size: 32px ;
+  font-weight: bold ;
+  color: #c54c33 ;
+  margin: 20px 0 ;
+  padding: 10px 0 ;
+  border-top: 1px solid #eee ;
+  border-bottom: 1px solid #eee ;
+}
+
+.product-price span{
+  font-size: 16px ;
+  font-weight: normal ;
+  color: #777 ;
+  margin-left: 5px ;
+}
+
+.product-description h3{
+  font-size: 18px ;
+  border-left: 4px solid #c54c33 ;
+  padding-left: 10px ;
+  margin-top: 25px ;
+  margin-bottom: 10px ;
+}
+
+.product-description p{
+  line-height: 1.6 ;
+  font-size: 14px ;
+  color: #333 ;
+}
+
+.purchase-form{
+  margin-top: 30px ;
+  padding-top: 20px ;
+  border-top: 1px solid #ddd ;
+}
+
+.quantity-selector{
+  margin-bottom: 20px ;
+  display: flex ;
+  align-items: center ;
+  font-size: 16px ;
+}
+
+.quantity-selector label{
+  font-weight: bold ;
+  margin-right: 10px ;
+}
+
+.quantity-selector select{
+  padding: 8px 10px ;
+  border: 1px solid #ccc ;
+  border-radius: 4px ;
+  font-size: 16px ;
+  min-width: 80px ;
+}
+
+.buy-btn{
+  width: 100% ;
+  padding: 15px ;
+  background-color: #2c974b ;
+  color: white ;
+  border: none ;
+  border-radius: 4px ;
+  font-size: 20px ;
+  font-weight: bold ;
+  cursor: pointer ;
+  transition: background-color 0.2s ;
+  font-family: 'Noto Serif JP', serif ;
+}
+
+.buy-btn:hover{
+  background-color: #247a3e;
+}

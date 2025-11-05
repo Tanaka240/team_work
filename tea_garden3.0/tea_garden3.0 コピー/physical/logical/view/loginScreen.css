@@ -1,0 +1,90 @@
+/* 画面全体のデザイン */
+body{
+  margin: 0 ;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif ;
+  background-color: #fdfaf6 ;
+  color: #333 ;
+}
+
+
+/* コンテナ 全体のデザイン */
+.container{
+  max-width: 400px ;
+  margin: 80px auto ;
+  background: #fff ;
+  padding: 30px 40px ;
+  border-radius: 10px ;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* コンテナ ロゴのデザイン */
+.logo{
+  text-align: center ;
+  margin-bottom: 30px ;
+}
+
+.logo h2{
+  font-size: 28px ;
+  color: #3e5e3a ; /*深緑系*/
+  margin: 0 ;
+  letter-spacing: 2px ;
+  font-weight: bold ;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif ;
+}
+
+.subtitle{
+  font-size: 16px ;
+  color: #777 ;
+  margin-top: 5px ;
+}
+
+/* コンテナ ラベルと入力欄のデザイン */
+form label{
+  display: block ;
+  margin-top: 15px ;
+  margin-bottom: 5px ;
+  font-weight: bold ;
+  color: #555 ;
+}
+
+form input{
+  width: 100% ;
+  padding: 10px ;
+  border: 1px solid #ccc ;
+  border-radius: 6px ;
+  box-sizing: border-box ;
+}
+
+/* コンテナ ボタンのデザイン */
+button[type="submit"]{
+  width: 100% ;
+  margin-top: 25px ;
+  padding: 12px ;
+  background-color: #88a05b ; /* 抹茶系 */
+  color: white ;
+  border: none ;
+  border-radius: 6px ;
+  font-size: 16px ;
+  cursor: pointer ;
+  transition: background-color 0.3s ease ;
+}
+
+button[type="submit"]:hover{
+  background-color: #768c4d ;
+}
+
+/* コンテナ 新規会員登録画面へのリンクのデザイン */
+.login-link{
+  text-align: center ;
+  margin-top: 20px ;
+  font-size: 14px ;
+}
+
+.login-link a{
+  color: #3e5e3a ;
+  text-decoration: none ;
+}
+
+.login-link a:hover{
+  text-decoration: underline ;
+}
