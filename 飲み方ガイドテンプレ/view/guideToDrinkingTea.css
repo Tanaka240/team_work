@@ -1,0 +1,126 @@
+/* 画面全体のデザイン */
+body{
+  margin: 0 ;
+  font-family: 'Noto Serif JP', serif ;
+  background-color: #fdfaf6 ;
+  color: #333 ;
+}
+
+
+/* ヘッダー 全体のデザイン */
+.header{
+  display: flex ;
+  justify-content: space-between ;
+  align-items: center ;
+  padding: 20px ;
+  background: #f7f7f7 ;
+  border-bottom: 1px solid #ddd ;
+}
+
+/* ヘッダー ロゴのデザイン */
+.logo{
+  font-size: 24px ;
+  font-weight: bold ;
+}
+
+.logo span{
+  font-size: 14px ;
+  margin-left: 8px ;
+  color: #777 ;
+}
+
+/* ヘッダー ナビゲーション部分のデザイン */
+.nav form{
+  display: inline-block ;
+  margin-right: 10px ;
+}
+
+.nav form:last-child{
+  margin-right: 0 ;
+}
+
+.nav button{
+  font-size: 14px ;
+  border: none ;
+  background: none ;
+  padding: 0 ;
+  color: #333 ;
+  cursor: pointer ;
+}
+
+.nav button:hover{
+  text-decoration: underline ;
+}
+
+
+/* コンテナ 全体のデザイン */
+.container{
+  display: flex ;
+  max-width: 1200px ;
+  margin: 30px auto ;
+  padding: 0 20px ;
+}
+
+
+/* サイドコンテナ 全体のデザイン */
+.sidebar{
+  width: 250px ;
+  padding-right: 20px ;
+  border-right: 1px solid #eee ;
+}
+
+/* サイドコンテナ 検索エンジンのデザイン */
+.search-form{
+  display: flex ;
+  border: 1px solid #ccc ;
+  border-radius: 25px ;
+  overflow: hidden ;
+  background-color: #fff ;
+}
+
+.search-input{
+  flex-grow: 1 ;
+  padding: 10px 15px ;
+  border: none ;
+  outline: none ;
+  font-size: 16px ;
+}
+
+/* サイドコンテナ 見出しのデザイン */
+.sidebar h3{
+  font-size: 16px ;
+  margin-top: 20px ;
+  border-bottom: 1px solid #ccc ;
+  padding-bottom: 5px ;
+}
+
+/* サイドコンテナ リスト化したおすすめ商品とお茶の種類のデザイン */
+.sidebar ul{
+  list-style: none ;
+  padding-left: 10px ;
+}
+
+.sidebar ul li{
+  margin: 10px 0 ;
+}
+
+.tg_sidebtn{
+  background: none ;
+  border: none ;
+  font: inherit ;
+  padding: 0 ;
+}
+
+.tg_sidebtn:hover{
+  text-decoration: underline ;
+}
+
+
+/* メインコンテナ 全体のデザイン */
+.main-content{
+  flex: 1 ;
+  padding-left: 30px ;
+}
+
+
+/* ここから下に記述 */

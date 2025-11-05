@@ -1,0 +1,4 @@
+guideToDrinkingTea.phpが表示する画面
+
+
+user_header.phpとuser_sidebar.phpは変更しない
