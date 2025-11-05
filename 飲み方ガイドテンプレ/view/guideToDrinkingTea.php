@@ -32,7 +32,7 @@
 
       <!-- 表の方式で画像を使いながら入れ方を伝える  -->
        <!-- 例  -->
-       <?php
+        <?php
         echo "<table border='1'>";
         echo "<tr><th>名前</th><th>年齢</th><th>職業</th></tr>";
         echo "<tr><td>山田太郎</td><td>28</td><td>エンジニア</td></tr>";
